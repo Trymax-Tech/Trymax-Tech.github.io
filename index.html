@@ -6,24 +6,24 @@
     <title>Trymax-Tech | Systems & Design</title>
     <style>
         body { background-color: #121212; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center; }
-        .container { border: 1px solid #333; padding: 40px; border-radius: 8px; background: #1e1e1e; box-shadow: 0 4px 15px rgba(0,0,0,0.5); width: 90%; max-width: 500px; }
+        .container { border: 1px solid #333; padding: 40px; border-radius: 12px; background: #1e1e1e; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 90%; max-width: 500px; }
         
-        /* The Built-in Logo */
-        .logo-box { margin-bottom: 20px; display: inline-block; }
-        .logo-svg { width: 80px; height: 80px; fill: none; stroke: #00adb5; stroke-width: 2; filter: drop-shadow(0 0 8px rgba(0, 173, 181, 0.5)); }
+        /* Your Uploaded Logo */
+        .logo-wrapper { margin-bottom: 25px; }
+        .main-logo { max-width: 200px; height: auto; filter: drop-shadow(0 0 5px rgba(255,255,255,0.1)); }
         
         h1 { color: #00adb5; margin-bottom: 5px; font-size: 2.2em; letter-spacing: 2px; }
         hr { border: 0; border-top: 1px solid #333; margin: 20px 0; }
         p { font-size: 1.1em; line-height: 1.6; color: #b0b0b0; margin: 5px 0; }
-        .status { color: #ff4d4d; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-top: 25px; font-size: 0.85em; }
+        .status { color: #00adb5; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-top: 25px; font-size: 0.85em; animation: blink 2s infinite; }
+        
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo-box">
-            <svg class="logo-svg" viewBox="0 0 24 24">
-                <path d="M12 2l9 4.5v11L12 22l-9-4.5v-11L12 2zM12 12l9-4.5M12 12v10M12 12L3 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+        <div class="logo-wrapper">
+            <img src="Trymax%20Tech%20Logo.png" alt="Trymax Tech Logo" class="main-logo">
         </div>
 
         <h1>Trymax-Tech</h1>
@@ -31,7 +31,7 @@
         <p>Custom Designs for:</p>
         <p><strong>3D Printing • Networking • Servers • OT Systems</strong></p>
         
-        <p class="status">_ SYSTEM INITIALIZING _</p>
+        <p class="status">_ System Initializing _</p>
     </div>
 </body>
 </html>
